@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodjost Academy — Training & Certification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"DM Serif Display"', 'serif'],
+              body: ['"Poppins"', 'sans'],
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="scroll-progress"></div>
+      <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl grad-primary flex items-center justify-center shadow-lg">
+              <img src="assets/img/icon.png" alt="Logo" class="w-11 h-10 rounded-xl">
+            </div>
+            <span class="font-display text-xl font-bold text-violet-800 tracking-tight">Prodjost<span class="grad-text">Academy</span></span>
+          </a>
+
+          <div class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="nav-link text-sm">Home</a>
+            <a href="about.html" class="nav-link text-sm">About</a>
+            <a href="programs.html" class="nav-link text-sm">Program</a>
+            <a href="register.html" class="nav-link text-sm">Register</a>
+            <a href="contact.html" class="nav-link text-sm">Contact</a>
+          </div>
+
+          <div class="md:flex items-center gap-3">
+            <a href="data-peserta.html" class="btn-outline text-sm py-2.5 px-5">View Data</a>
+          </div>
+
+          <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+            <span class="w-6 h-0.5 bg-violet-700 rounded transition-all" id="h1"></span>
+            <span class="w-6 h-0.5 bg-violet-700 rounded transition-all" id="h2"></span>
+            <span class="w-4 h-0.5 bg-violet-700 rounded transition-all" id="h3"></span>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-white/95 backdrop-blur-xl border-t border-violet-50 px-5 pb-4">
+          <div class="flex flex-col gap-1 pt-2">
+            <a href="#home" class="nav-link py-3 text-sm border-b border-violet-50 block">Home</a>
+            <a href="about.html" class="nav-link py-3 text-sm border-b border-violet-50 block">About</a>
+            <a href="programs.html" class="nav-link py-3 text-sm border-b border-violet-50 block">Programs</a>
+            <a href="register.html" class="nav-link py-3 text-sm border-b border-violet-50 block">Register</a>
+            <a href="contact.html" class="nav-link py-3 text-sm block">Contact</a>
+            <div class="flex gap-3 mt-3">
+              <a href="data-peserta.html" class="btn-outline text-sm py-2 px-4 flex-1 text-center">View Data</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="min-h-screen flex items-center py-24 bg-white relative overflow-hidden pt-20">
+        <div class="absolute top-0 right-0 w-96 h-96 blob opacity-5 grad-primary"></div>
+        <div class="max-w-7xl mx-auto px-5 pt-10">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative reveal">
+              <div class="grad-primary rounded-3xl p-8 text-white relative overflow-hidden noise">
+                <div class="relative z-10">
+                  <p class="pill bg-white/20 text-white mb-6">Misi Kami</p>
+                  <h3 class="font-display text-3xl leading-snug mb-4">Tempat Keahlian bertemu Peluang</h3>
+                  <p class="text-white/80 leading-relaxed mb-6">Prodjost Academy didirikan pada tahun 2024 dengan satu misi utama: membuat pengembangan profesional menjadi lebih mudah diakses, praktis, dan diakui bagi semua orang di Indonesia.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 rounded-2xl p-4">
+                      <div class="text-3xl font-display mb-1">72+</div>
+                      <p class="text-sm text-white/80">Tahun Keunggulan</p>
+                    </div>
+                    <div class="bg-white/10 rounded-2xl p-4">
+                      <div class="text-3xl font-display mb-1">8+</div>
+                      <p class="text-sm text-white/80">Sertifikasi</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-48 h-48 rounded-full bg-white opacity-5"></div>
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay:0.2s">
+              <div class="pill grad-soft text-violet-600 mb-5">About Us</div>
+              <h2 class="font-display text-4xl lg:text-5xl text-violet-900 leading-tight mb-6">
+                Tempat Keahlian<br/>bertemu <em class="grad-text not-italic">Peluang</em>
+              </h2>
+              <p class="text-violet-700/70 leading-relaxed mb-6 text-base">
+                Kami bekerja sama dengan para ahli industri terkemuka dan lembaga sertifikasi internasional untuk menghadirkan program yang dapat langsung diterapkan di dunia nyata.
+              </p>
+              <p class="text-violet-700/70 leading-relaxed mb-8 text-base">
+                Setiap kursus dirancang oleh praktisi, untuk praktisi. Baik Anda ingin mengembangkan karier, berpindah industri, atau membangun kemampuan kepemimpinan, Prodjost Academy memiliki program yang dapat membantu Anda mencapainya — lebih cepat.
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-start gap-3 p-4 rounded-2xl bg-violet-50">
+                  <div class="w-9 h-9 rounded-xl grad-primary flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-users text-white"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-violet-900 text-sm">Live Mentoring</p>
+                    <p class="text-xs text-violet-500 mt-0.5">Sesi mentoring langsung dengan ahli</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 rounded-2xl bg-violet-50">
+                  <div class="w-9 h-9 rounded-xl grad-primary flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-star text-white"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-violet-900 text-sm">Certified Programs</p>
+                    <p class="text-xs text-violet-500 mt-0.5">Sertifikasi yang diakui secara internasional</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 rounded-2xl bg-violet-50">
+                  <div class="w-9 h-9 rounded-xl grad-primary flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-video text-white"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-violet-900 text-sm">Video Learning</p>
+                    <p class="text-xs text-violet-500 mt-0.5">Konten HD, akses kapan saja</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 rounded-2xl bg-violet-50">
+                  <div class="w-9 h-9 rounded-xl grad-primary flex items-center justify-center flex-shrink-0 shadow-md">
+                    <i class="fas fa-users text-white"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-violet-900 text-sm">Komunitas</p>
+                    <p class="text-xs text-violet-500 mt-0.5">Terhubung oleh 200 rekan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-violet-950 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-5">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          <div>
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-9 h-9 rounded-xl grad-primary flex items-center justify-center shadow-lg">
+                <img src="assets/img/icon.png" alt="Logo" class="w-11 h-10 rounded-xl">
+              </div>
+              <span class="font-display text-xl">Prodjost<span class="grad-text">Academy</span></span>
+            </div>
+            <p class="text-violet-300 text-sm leading-relaxed mb-5">Memberdayakan para profesional di seluruh Indonesia melalui pelatihan kelas dunia dan sertifikasi yang diakui secara internasional.</p>
+            <div class="flex gap-3">
+              <a href="#" class="w-9 h-9 rounded-xl bg-violet-800 flex items-center justify-center hover:bg-violet-600 transition">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              <a href="#" class="w-9 h-9 rounded-xl bg-violet-800 flex items-center justify-center hover:bg-violet-600 transition">
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              <a href="#" class="w-9 h-9 rounded-xl bg-violet-800 flex items-center justify-center hover:bg-violet-600 transition">
+                <i class="fab fa-instagram text-white"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-5 text-violet-400">Programs</h4>
+            <ul class="space-y-2.5 text-sm text-violet-300">
+              <li><a href="programs.html" class="hover:text-white transition">Project Management (PMP)</a></li>
+              <li><a href="programs.html" class="hover:text-white transition">Digital Marketing</a></li>
+              <li><a href="programs.html" class="hover:text-white transition">UI/UX Design Fundamentals</a></li>
+              <li><a href="programs.html" class="hover:text-white transition">Fullstack Web Development</a></li>
+              <li><a href="programs.html" class="hover:text-white transition">Supply Chain Management</a></li>
+              <li><a href="programs.html" class="hover:text-white transition">AI & Machine Learning</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-5 text-violet-400">Company</h4>
+            <ul class="space-y-2.5 text-sm text-violet-300">
+              <li><a href="about.html" class="hover:text-white transition">Tentang Kami</a></li>
+              <li><a href="register.html" class="hover:text-white transition">Daftar</a></li>
+              <li><a href="programs.html" class="hover:text-white transition">Program Kami</a></li>
+              <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-violet-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-violet-400">
+          <p>© 2026 Prodjost Academy. All rights reserved.</p>
+          <div class="flex gap-5">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+            <a href="#" class="hover:text-white transition">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
