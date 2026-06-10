@@ -20,7 +20,7 @@ Website Company Profile untuk kebutuhan Uji Kompetensi Keahlian (UKK) Rekayasa P
 
 ## Preview
 
-![Homepage](images/homepage.png)
+![Homepage](homepage.png)
 
 ## Live Demo
 
